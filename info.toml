@@ -114,8 +114,7 @@ path = "exercises/functions/functions5.rs"
 mode = "compile"
 hint = """
 This is a really common error that can be fixed by removing one character.
-It happens because Rust distinguishes between expressions and statements: expressions return
-a value based on its operand, and statements simply return a () type which behaves just like `void` in C/C++ language.
+It happens because Rust distinguishes between expressions and statements: expressions return a value based on their operand(s), and statements simply return a () type which behaves just like `void` in C/C++ language.
 We want to return a value of `i32` type from the `square` function, but it is returning a `()` type...
 They are not the same. There are two solutions:
 1. Add a `return` ahead of `num * num;`
@@ -364,7 +363,7 @@ mode = "compile"
 hint = """
 The delicious_snacks module is trying to present an external interface that is 
 different than its internal structure (the `fruits` and `veggies` modules and
-associated constants). Complete the `use` statemants to fit the uses in main and
+associated constants). Complete the `use` statements to fit the uses in main and
 find the one keyword missing for both constants."""
 
 [[exercises]]
